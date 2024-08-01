@@ -1,0 +1,14 @@
+image-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+}
+
+img {
+  border-radius: 8px;
+}
+
+body {
+  background-color: yellow;
+}
