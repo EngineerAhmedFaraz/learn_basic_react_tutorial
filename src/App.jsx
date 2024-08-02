@@ -5,6 +5,7 @@ import About from "./pages/About";
 import Contact from "./pages/contact/Contact";
 import Service from "./pages/service";
 import { Blog } from "./pages/Blog";
+import LifeCycle from "./pages/lifeCycle";
 
 const user = {
   firstName: "Ahmed",
@@ -45,7 +46,7 @@ export const App = () => {
     <>
       {/* <BrowserRouter> */}
       <h1 onClick={changeTitle}>Hi : {formatName(user)}</h1>
-      <h1>Hello : {User} </h1>
+      {/* <h1>Hello : {User} </h1> */}
 
       <Routes>
         <Route path="/" element={<Home />} />
@@ -53,6 +54,7 @@ export const App = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/service" element={<Service />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/lifeCycle" element={<LifeCycle />} />
       </Routes>
       {/* </BrowserRouter> */}
       {/* <h1 onClick={changeTitle}>Hi : {formatName(user)}</h1>
