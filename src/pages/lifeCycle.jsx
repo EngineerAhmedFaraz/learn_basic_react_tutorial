@@ -46,17 +46,16 @@ const lifeCycle = () => {
         <p>Loading...</p>
       ) : (
         <ul>
-          {post?.slice(0, 100)?.map((item) => {
-            {
-              /* const { body, title, id } = item; */
-            }
-            return (
+          {post?.slice(0, 100)?.map((item) => (
+            <li>{item.title}</li>
+
+            /* return (
               <>
                 <li>{item.title}</li>
                 <li>{item.id}</li>
               </>
-            );
-          })}
+            ); */
+          ))}
         </ul>
       )}
     </>
