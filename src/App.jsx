@@ -6,6 +6,7 @@ import Contact from "./pages/contact/Contact";
 import Service from "./pages/service";
 import { Blog } from "./pages/Blog";
 import LifeCycle from "./pages/lifeCycle";
+import TryHooks from "./pages/tryHooks/TryHooks";
 
 const user = {
   firstName: "Ahmed",
@@ -45,7 +46,7 @@ export const App = () => {
   return (
     <>
       {/* <BrowserRouter> */}
-      <h1 onClick={changeTitle}>Hi : {formatName(user)}</h1>
+      {/* <h1 onClick={changeTitle}>Hi : {formatName(user)}</h1> */}
       {/* <h1>Hello : {User} </h1> */}
 
       <Routes>
@@ -55,6 +56,7 @@ export const App = () => {
         <Route path="/service" element={<Service />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/lifeCycle" element={<LifeCycle />} />
+        <Route path="/tryHooks" element={<TryHooks />} />
       </Routes>
       {/* </BrowserRouter> */}
       {/* <h1 onClick={changeTitle}>Hi : {formatName(user)}</h1>
