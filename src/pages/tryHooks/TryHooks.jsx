@@ -1,4 +1,4 @@
-import React, { Children, useEffect, useState } from "react";
+import React, { Children, memo, useEffect, useState } from "react";
 import { data as localData } from "../data/data";
 import axios from "axios";
 
