@@ -1,9 +1,9 @@
 import React from "react";
 
-const ResultComponent = ({ result }) => {
+const ResultComponent = ({ marks }) => {
   return (
     <>
-      <h1>Result is : {result}</h1>
+      <h2>{marks}</h2>
     </>
   );
 };
