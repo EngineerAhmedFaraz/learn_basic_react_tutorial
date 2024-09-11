@@ -10,6 +10,8 @@ import TryHooks from "./pages/tryHooks/TryHooks";
 import Memo from "./pages/Memo";
 import CallBackHook from "./pages/callBackHook";
 import PropDealing from "./pages/PropDealing";
+import PostList from "./pages/PostList";
+import PostDetail from "./pages/PostDetail";
 
 const user = {
   firstName: "Ahmed",
@@ -63,6 +65,8 @@ export const App = () => {
         <Route path="/memo" element={<Memo />} />
         <Route path="/callback" element={<CallBackHook />} />
         <Route path="/propDealing" element={<PropDealing />} />
+        <Route path="/postlist" element={<PostList />} />
+        <Route path="/postdetail" element={<PostDetail />} />
       </Routes>
       {/* </BrowserRouter> */}
       {/* <h1 onClick={changeTitle}>Hi : {formatName(user)}</h1>
