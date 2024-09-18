@@ -12,6 +12,17 @@ import CallBackHook from "./pages/callBackHook";
 import PropDealing from "./pages/PropDealing";
 import PostList from "./pages/PostList";
 import PostDetail from "./pages/PostDetail";
+import UseParams from "./component/UseParams";
+import UseNavigate from "./component/UseNavigate";
+import LocationDisplay from "./component/LocationDisplay";
+import Dashboard from "./pages/Dashboard";
+import Profile from "./component/Profile";
+import DemoDashboard from "./component/DemoDashboard";
+import Table from "./component/Table";
+import Cards from "./component/Cards";
+import UseLayoutEffect from "./component/UseLayoutEffect";
+import UseReducer from "./component/UseReducer";
+import { UseReducer1 } from "./component/UseReducer1";
 
 const user = {
   firstName: "Ahmed",
@@ -67,7 +78,24 @@ export const App = () => {
         <Route path="/propDealing" element={<PropDealing />} />
         <Route path="/postlist" element={<PostList />} />
         <Route path="/postdetail" element={<PostDetail />} />
+
+        {/* This is like a ECommerce Website to get Product ID */}
+        <Route path="/useparamshook/:id" element={<UseParams />} />
+        <Route path="useNavigateHook" element={<UseNavigate />} />
+        <Route path="locationDisplay" element={<LocationDisplay />} />
+
+        {/* Dashboard */}
+        <Route path="dashboard" element={<DemoDashboard />}>
+          <Route path="profile" element={<Profile />} />
+          <Route path="table" element={<Table />} />
+          <Route path="cards" element={<Cards />} />
+        </Route>
+
+        <Route path="useLayoutEffect" element={<UseLayoutEffect />} />
+        <Route path="useReducer" element={<UseReducer />} />
+        <Route path="useReducer1" element={<UseReducer1 />} />
       </Routes>
+
       {/* </BrowserRouter> */}
       {/* <h1 onClick={changeTitle}>Hi : {formatName(user)}</h1>
       <h1>Hello : {User} </h1> */}
